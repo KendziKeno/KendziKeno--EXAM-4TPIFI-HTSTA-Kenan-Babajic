@@ -1,0 +1,71 @@
+header {
+    background-color: lightblue;
+    text-align: center;
+}
+
+header h1 {
+    color: red;
+    background-color: gold;
+}
+
+header p {
+    font-family: Arial;
+}
+
+nav a {
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: right;
+    font-family: Courier;
+    color: white;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: rgb(55, 55, 55);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.child {
+    text-align: justify;
+    float: left;
+    width: 50%;
+    padding: 35px;
+}
+
+.parent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .child {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
